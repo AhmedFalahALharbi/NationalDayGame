@@ -178,8 +178,8 @@ function startTimer() {
             timerElement.textContent = "انتهى الوقت";
             document.getElementById('score').textContent = `نقاطك: ${score}`;
             document.getElementById('score').style.display = 'block';
-            const gameArea = document.getElementById('gameArea'); 
-            gameArea.classList.add('animate__shakeX');
+            const board = document.getElementById('pieces'); 
+            board.classList.add('animate__heartBeat');
             disableDrag();
         }
     }, 1000);
@@ -192,7 +192,7 @@ function handleGameStart() {
     if (!gameStarted) {
         gameContainer.style.display = 'flex';
         score = 0;
-        timeLeft = 120;
+        timeLeft = 5;
         startButton.textContent = 'العب مجددا';
         document.getElementById('score').style.display = 'none';
         startTimer();
