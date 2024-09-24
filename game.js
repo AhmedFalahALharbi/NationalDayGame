@@ -1,6 +1,6 @@
 let score = 0;
 let gameStarted = false;
-let timeLeft = 120; 
+let timeLeft = 150; 
 let countdown;
 
 var rows = 4;
