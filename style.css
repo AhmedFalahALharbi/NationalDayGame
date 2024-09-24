@@ -7,7 +7,7 @@ body {
     background-size:cover;
     background-repeat: no-repeat;
     background-color: #B3A99F;
-    min-height:100vh;
+    min-height:110vh;
     direction: rtl;
 }
 button {
@@ -111,6 +111,7 @@ li {
         
     }
     .game-container {
+        height: fit-content;
         flex-direction: column;
     }
     .clipped-parts-container {

@@ -78,6 +78,7 @@ function dragDrop() {
 }
 
 function dragEnd() {
+    
     if (currTile.src.includes("blank")) {
         return;
     }
@@ -115,7 +116,8 @@ if (isCorrect) {
     document.getElementById('score').textContent = `نقاطك: ${score}`;
     document.getElementById('score').style.display = 'block';
     console.log(`storge score:${localStorage.getItem('playerScore')}`);
-    
+    const gameArea = document.getElementById('gameArea'); 
+        gameArea.classList.add('animate__heartBeat');
     disableDrag(); 
 
     updateScoreInAPI(score);
@@ -176,7 +178,8 @@ function startTimer() {
             timerElement.textContent = "انتهى الوقت";
             document.getElementById('score').textContent = `نقاطك: ${score}`;
             document.getElementById('score').style.display = 'block';
-            
+            const gameArea = document.getElementById('gameArea'); 
+            gameArea.classList.add('animate__shakeX');
             disableDrag();
         }
     }, 1000);
