@@ -192,7 +192,7 @@ function handleGameStart() {
     if (!gameStarted) {
         gameContainer.style.display = 'flex';
         score = 0;
-        timeLeft = 5;
+        timeLeft = 150;
         startButton.textContent = 'العب مجددا';
         document.getElementById('score').style.display = 'none';
         startTimer();
