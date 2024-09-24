@@ -1,0 +1,125 @@
+body {
+    overflow-x: hidden;
+    padding: 0px;
+    margin: 0px;
+    background-image: url(Img/bgPC.png);
+    background-position:50%;
+    background-size:cover;
+    background-repeat: no-repeat;
+    background-color: #B3A99F;
+    min-height:100vh;
+    direction: rtl;
+}
+button {
+    border-radius: 20px;
+    border: 0px;
+    background-color: #4B413D;
+    padding: 5px;
+    color: white;
+}
+button:hover {
+    opacity: 80%;
+}
+button:active {
+    opacity: 60%;
+}
+input {
+    border-radius: 20px;
+    border: 0px;
+    margin: 5px;
+}
+ul {
+    width: 100%;
+    height: 6vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    list-style: none;
+    background-color: #B3A99F;
+}
+li {
+    margin: 10px;
+    color: white;
+}
+
+.buttonArea {
+    display: flex;
+    justify-content: center;
+}
+#gameArea{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+    border: solid 1px #4B413D; 
+    border-radius: 10px;
+     width:30%; 
+     padding: 1rem; 
+     background-color: #B3A99F; 
+     opacity: 70%; 
+}
+.game-container {
+    display: none;
+    justify-content: space-around;
+    flex-direction: row;
+    align-items: center;
+    width: 100vw;
+    height: 500px;
+    position: relative;
+}
+
+.clipped-parts-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    width: 45%;
+}
+
+.clipped-parts-container img {
+    width: 3rem; 
+    height: 3rem;
+    cursor: grab;
+}
+
+.full-map-container {
+    width: 45%;
+    text-align: center;
+    align-items: center;
+}
+.overlay-parts {
+    border-radius: 5px;
+    margin: 0 ;
+    display: flex;
+    flex-wrap: wrap;
+}
+.overlay-parts img {
+    width: 24%;
+    border: 1px solid #4B413D;
+}
+
+
+
+@media (max-width: 768px) {
+    body {
+    background-image: url(Img/bgMobile.jpg);
+    background-position:0%;
+    background-size:cover;
+    background-repeat:repeat;
+    background-color: #B3A99F;
+        
+    }
+    .game-container {
+        flex-direction: column;
+    }
+    .clipped-parts-container {
+        margin: 10px;
+        width: 90%;
+    }
+    
+    .full-map-container {
+        width: 90%;
+        margin: 10px;
+    }
+}

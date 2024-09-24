@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="leaderboard.css">
+    <title>Leaderboard</title>
+</head>
+<body>
+    <ul>
+        <li><button id="logoutButton">تسجيل الخروج</button></li>
+        <li><span id="playerNameDisplay"></span></li>
+        <li><a href="game.html">
+            <svg xmlns="http://www.w3.org/2000/svg" height="40px" viewBox="0 -960 960 960" width="40px" fill="#4B413D"><path d="M226.67-186.67h140v-246.66h226.66v246.66h140v-380L480-756.67l-253.33 190v380ZM160-120v-480l320-240 320 240v480H526.67v-246.67h-93.34V-120H160Zm320-352Z"/></svg>
+        </a></li>
+    </ul>
+    <div class="leaderboard-container">
+        <h1 id="title">Leaderboard</h1>
+        <table>
+            <thead>
+                <tr>
+                    <th>المركز</th>
+                    <th>اسم اللاعب</th>
+                    <th>النقاط</th>
+                </tr>
+            </thead>
+            <tbody id="leaderboard">
+
+            </tbody>
+        </table>
+    </div>
+
+    <script src="leaderboard.js"></script>
+</body>
+</html>
